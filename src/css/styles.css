@@ -18,14 +18,22 @@
     linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
 }
 
-.react-colorful__pointer-fill,
 .react-colorful__alpha-gradient {
-  content: "";
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+}
+
+.react-colorful__pointer-fill {
+  width: 90%;
+  height: 90%;
+}
+
+.react-colorful__pointer-fill,
+.react-colorful__alpha-gradient {
+  content: "";
   pointer-events: none;
   border-radius: inherit;
 }
@@ -83,6 +91,9 @@
   border: 2px solid #fff;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .react-colorful__interactive:focus .react-colorful__pointer {
