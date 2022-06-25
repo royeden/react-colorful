@@ -11,20 +11,33 @@ exports[`Accepts any valid \`div\` attributes 1`] = `
     style="background-color: rgb(255, 0, 0);"
   >
     <div
-      aria-label="Color"
-      aria-valuetext="Saturation 0%, Brightness 0%"
-      class="react-colorful__interactive"
-      role="slider"
-      tabindex="0"
+      aria-label="Saturation and Brightness"
+      aria-rowcount="100"
+      role="grid"
     >
       <div
-        class="react-colorful__pointer react-colorful__saturation-pointer"
-        style="top: 100%; left: 0%;"
+        aria-label="Brightness 0%"
+        aria-rowindex="0"
+        role="row"
       >
         <div
-          class="react-colorful__pointer-fill"
-          style="background-color: rgb(0, 0, 0);"
-        />
+          aria-colcount="100"
+          aria-colindex="0"
+          aria-label="Saturation 0%"
+          class="react-colorful__interactive"
+          role="gridcell"
+          tabindex="0"
+        >
+          <div
+            class="react-colorful__pointer react-colorful__saturation-pointer"
+            style="top: 100%; left: 0%;"
+          >
+            <div
+              class="react-colorful__pointer-fill"
+              style="background-color: rgb(0, 0, 0);"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -72,20 +85,33 @@ exports[`Renders proper alpha color picker markup 1`] = `
     style="background-color: rgb(255, 0, 0);"
   >
     <div
-      aria-label="Color"
-      aria-valuetext="Saturation 100%, Brightness 100%"
-      class="react-colorful__interactive"
-      role="slider"
-      tabindex="0"
+      aria-label="Saturation and Brightness"
+      aria-rowcount="100"
+      role="grid"
     >
       <div
-        class="react-colorful__pointer react-colorful__saturation-pointer"
-        style="top: 0%; left: 100%;"
+        aria-label="Brightness 100%"
+        aria-rowindex="100"
+        role="row"
       >
         <div
-          class="react-colorful__pointer-fill"
-          style="background-color: rgb(255, 0, 0);"
-        />
+          aria-colcount="100"
+          aria-colindex="100"
+          aria-label="Saturation 100%"
+          class="react-colorful__interactive"
+          role="gridcell"
+          tabindex="0"
+        >
+          <div
+            class="react-colorful__pointer react-colorful__saturation-pointer"
+            style="top: 0%; left: 100%;"
+          >
+            <div
+              class="react-colorful__pointer-fill"
+              style="background-color: rgb(255, 0, 0);"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -151,20 +177,33 @@ exports[`Renders proper color picker markup 1`] = `
     style="background-color: rgb(255, 0, 0);"
   >
     <div
-      aria-label="Color"
-      aria-valuetext="Saturation 100%, Brightness 100%"
-      class="react-colorful__interactive"
-      role="slider"
-      tabindex="0"
+      aria-label="Saturation and Brightness"
+      aria-rowcount="100"
+      role="grid"
     >
       <div
-        class="react-colorful__pointer react-colorful__saturation-pointer"
-        style="top: 0%; left: 100%;"
+        aria-label="Brightness 100%"
+        aria-rowindex="100"
+        role="row"
       >
         <div
-          class="react-colorful__pointer-fill"
-          style="background-color: rgb(255, 0, 0);"
-        />
+          aria-colcount="100"
+          aria-colindex="100"
+          aria-label="Saturation 100%"
+          class="react-colorful__interactive"
+          role="gridcell"
+          tabindex="0"
+        >
+          <div
+            class="react-colorful__pointer react-colorful__saturation-pointer"
+            style="top: 0%; left: 100%;"
+          >
+            <div
+              class="react-colorful__pointer-fill"
+              style="background-color: rgb(255, 0, 0);"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -203,20 +242,33 @@ exports[`Works with no props 1`] = `
     style="background-color: rgb(255, 0, 0);"
   >
     <div
-      aria-label="Color"
-      aria-valuetext="Saturation 0%, Brightness 0%"
-      class="react-colorful__interactive"
-      role="slider"
-      tabindex="0"
+      aria-label="Saturation and Brightness"
+      aria-rowcount="100"
+      role="grid"
     >
       <div
-        class="react-colorful__pointer react-colorful__saturation-pointer"
-        style="top: 100%; left: 0%;"
+        aria-label="Brightness 0%"
+        aria-rowindex="0"
+        role="row"
       >
         <div
-          class="react-colorful__pointer-fill"
-          style="background-color: rgb(0, 0, 0);"
-        />
+          aria-colcount="100"
+          aria-colindex="0"
+          aria-label="Saturation 0%"
+          class="react-colorful__interactive"
+          role="gridcell"
+          tabindex="0"
+        >
+          <div
+            class="react-colorful__pointer react-colorful__saturation-pointer"
+            style="top: 100%; left: 0%;"
+          >
+            <div
+              class="react-colorful__pointer-fill"
+              style="background-color: rgb(0, 0, 0);"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -323,13 +323,20 @@ it("Sets proper `aria-valuetext` attribute value", async () => {
   const saturation = result.container.querySelector(
     ".react-colorful__saturation .react-colorful__interactive"
   );
+  const brightness = saturation.parentElement;
 
-  expect(saturation.getAttribute("aria-valuetext")).toBe("Saturation 0%, Brightness 0%");
+  expect(saturation.getAttribute("aria-label")).toBe("Saturation 0%");
+  expect(saturation.getAttribute("aria-colindex")).toBe("0");
+  expect(brightness.getAttribute("aria-label")).toBe("Brightness 0%");
+  expect(brightness.getAttribute("aria-rowindex")).toBe("0");
 
   fireEvent(saturation, new FakeMouseEvent("mousedown", { pageX: 0, pageY: 0 }));
   fireEvent(saturation, new FakeMouseEvent("mousemove", { pageX: 500, pageY: 0 })); // '#ff0000'
 
-  expect(saturation.getAttribute("aria-valuetext")).toBe("Saturation 100%, Brightness 100%");
+  expect(saturation.getAttribute("aria-label")).toBe("Saturation 100%");
+  expect(saturation.getAttribute("aria-colindex")).toBe("100");
+  expect(brightness.getAttribute("aria-label")).toBe("Brightness 100%");
+  expect(brightness.getAttribute("aria-rowindex")).toBe("100");
 });
 
 it("Accepts any valid `div` attributes", () => {
