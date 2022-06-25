@@ -46,8 +46,8 @@ export const Alpha = ({ className, hsva, onChange }: Props): JSX.Element => {
         aria-label="Alpha"
         aria-valuetext={`${ariaValue}%`}
         aria-valuenow={ariaValue}
-        aria-valuemin="0"
-        aria-valuemax="100"
+        aria-valuemin={0}
+        aria-valuemax={100}
       >
         <Pointer
           className="react-colorful__alpha-pointer"

@@ -35,8 +35,8 @@ const HueBase = ({ className, hue, onChange }: Props) => {
         onKey={handleKey}
         aria-label="Hue"
         aria-valuenow={round(hue)}
-        aria-valuemax="360"
-        aria-valuemin="0"
+        aria-valuemax={360}
+        aria-valuemin={0}
       >
         <Pointer
           className="react-colorful__hue-pointer"
